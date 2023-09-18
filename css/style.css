@@ -853,6 +853,11 @@ footer .copy span {
   display: none;
   text-align: center;
 }
+/* formulaire conctact */
+.form{
+  padding: 20px 20px;
+}
+/* end */
 @media (max-width:720px) {
   .site-navbar #site-logo{
     width: 100px;
@@ -1076,9 +1081,10 @@ footer .copy span {
   padding: 10px 0;
 
 }
-
-
-
 /* end*/
+
+.hero{
+  height: 450px;
+}
 
 }

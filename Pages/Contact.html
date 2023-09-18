@@ -2,86 +2,219 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kablammo&family=Orbitron:wght@900&family=Teko:wght@300&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kablammo&family=Orbitron:wght@900&family=Teko:wght@300&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+  <link rel="stylesheet" href="../fonts/icomoon/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Contact</title>
 </head>
 
 <body>
+  <div class="site-mobile-menu" id="mob">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="site-navbar" role="banner" id="nav">
+
+    <div class="container">
+      <div class="d-flex justify-content-between">
+
+        <div class="col-11 col-xl-2">
+          <img class="mb-0 site-logo" id="site-logo" src="../assets/images/logo.png">
+
+        </div>
+        <div class="col-12 col-md-10 d-none d-xl-block">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+
+            <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li class="active"><a href="../index.html"><span>Acceuil</span></a></li>
+              </li>
+              <li><a href="Communaute.html"><span>Communaute</span></a></li>
+              <li><a href="Evenement.html"><span>Evenement</span></a></li>
+              <li><a href="Apropos.html"><span>Apropos</span></a></li>
+              <li><a href="Contact.html"><span>Contact</span></a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+
+        <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+            class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <div class="hero" style="background-image: url('../assets/images/PINA-COLADA.png');"></div>
+
+
+
+  <div class="form">
     <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltip01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-          <div class="valid-tooltip">
-            Looks good!
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Pre-nom</label>
+        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Mail</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            required>
+          <div class="invalid-feedback">
+            Please choose a username.
           </div>
         </div>
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltip02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
-          <div class="valid-tooltip">
-            Looks good!
-          </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Ville</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
         </div>
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltipUsername" class="form-label">Username</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-            <div class="invalid-tooltip">
-              Please choose a unique and valid username.
-            </div>
-          </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Commune</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option value="">Gombe</option>
+          <option value="">Kinshasa</option>
+          <option value="">Barumbu</option>
+          <option value="">Mont-ngafula</option>
+          <option value="">Ngaliema</option>
+          <option value="">Selembao</option>
+          <option value="">Limete</option>
+          <option value="">Kalamu</option>
+          <option value="">Bumbu</option>
+          <option>Kintambo</option>
+          <option value="">Makala</option>
+          <option value="">Lemba</option>
+          <option value="">Matete</option>
+          <option value="">Kimbanseke</option>
+          <option value="">Ligwala</option>
+          <option value="">Maluku</option>
+          <option value="">Upn</option>
+          <option value="">Masina</option>
+          <option value="">Pascal</option>
+          <option>Kingasani</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
         </div>
-        <div class="col-md-6 position-relative">
-          <label for="validationTooltip03" class="form-label">City</label>
-          <input type="text" class="form-control" id="validationTooltip03" required>
-          <div class="invalid-tooltip">
-            Please provide a valid city.
-          </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
         </div>
-        <div class="col-md-3 position-relative">
-          <label for="validationTooltip04" class="form-label">State</label>
-          <select class="form-select" id="validationTooltip04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div class="invalid-tooltip">
-            Please select a valid state.
-          </div>
-        </div>
-        <div class="col-md-3 position-relative">
-          <label for="validationTooltip05" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="validationTooltip05" required>
-          <div class="invalid-tooltip">
-            Please provide a valid zip.
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </form>
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">Votre message</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      
+      
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+      </div>
+    </form>
+
+  </div>
 
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+  <div class="contact" id="co">
+    <div><span>intersse- </span></div>
+    <div>
+      <p>Avez-vous des question?</p>
+    </div>
+    <div class="route"><a href="http://">Contact-nous</a></div>
+  </div>
+
+
+  <footer id="footer">
+    <div class="footer">
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="" id="site-logo">
+      </div>
+      <div class="ittems">
+        <i class="icon-facebook"></i>
+        <i class="icon-instagram"></i>
+        <i class="icon-twitter"></i>
+        <i class="icon-email"></i>
+        <i class="icon-mail"></i>
+
+      </div>
+
+
+
+
+      <div class="mail">
+        <input type="mail" class="input" placeholder="Votre adresse email">
+      </div>
+
+      <div class="menu">
+        <ul class="">
+          <li class=""><a href="../index.html"><span>Acceuil</span></a></li>
+          <li><a href="Communaute.html"><span>Communaute</span></a></li>
+          <li><a href="Evenement.html"><span>Evenement</span></a></li>
+          <li><a href="Apropos.html"><span>Apropos</span></a></li>
+          <li><a href="Contact.html"><span>Contact</span></a></li>
+        </ul>
+      </div>
+
+      <div class="copy">
+        <p>&copy; 2023 Confidential. All rights reserved | Developer par <span>Mcleroi01 avec <i
+              class="icon-heart"></i></span> </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.sticky.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
