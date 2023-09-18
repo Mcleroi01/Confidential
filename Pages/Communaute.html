@@ -25,9 +25,9 @@
     <title>Confidential</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-    <div class="site-mobile-menu">
+    <div class="site-mobile-menu" style="display:none;" id="mob">
         <div class="site-mobile-menu-header">
             <div class="site-mobile-menu-close mt-3">
                 <span class="icon-close2 js-menu-toggle"></span>
@@ -36,7 +36,7 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-    <header class="site-navbar" role="banner">
+    <header class="site-navbar" role="banner" style="display:none;" id="nav">
 
         <div class="container">
             <div class="d-flex justify-content-between">
@@ -49,12 +49,12 @@
                     <nav class="site-navigation position-relative text-right" role="navigation">
 
                         <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li class="active"><a href="index.html"><span>Acceuil</span></a></li>
+                            <li class="active"><a href="../index.html"><span>Acceuil</span></a></li>
                             </li>
-                            <li><a href="Pages/Communaute.html"><span>Communaute</span></a></li>
-                            <li><a href="Pages/Evenement.html"><span>Evenement</span></a></li>
-                            <li><a href="Pages/Apropos.html"><span>Apropos</span></a></li>
-                            <li><a href="Pages/Contact.html"><span>Contact</span></a></li>
+                            <li><a href="Communaute.html"><span>Communaute</span></a></li>
+                            <li><a href="Evenement.html"><span>Evenement</span></a></li>
+                            <li><a href="Apropos.html"><span>Apropos</span></a></li>
+                            <li><a href="Contact.html"><span>Contact</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -75,7 +75,7 @@
         
     </header>
 
-    <div class="hero">
+    <div class="hero" id="hero" style="display:none;" >
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -106,14 +106,14 @@
    
 
 
-    <div class="contact">
+    <div class="contact" style="display:none;" id="co">
         <div><span>intersse- </span></div>
         <div>
             <p>Avez-vous des question?</p>
         </div>
         <div class="route"><a href="http://">Contact-nous</a></div>
     </div>
-    <footer>
+    <footer style="display:none;" id="footer">
         <div class="footer">
             <div class="logo">
                 <img src="../assets/images/logo.png" alt="" id="site-logo">

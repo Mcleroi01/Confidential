@@ -90,14 +90,14 @@ $(function() {
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 2000);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("nav").style.display = "block";
-  document.getElementById("slide").style.display = "block";
+  document.getElementById("hero").style.display = "block";
   document.getElementById("co").style.display = "block";
   document.getElementById("footer").style.display = "block";
-  document.getElementById("av").style.display = "block";
+  document.getElementById("mob").style.display = "block";
 }
