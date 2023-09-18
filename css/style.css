@@ -693,6 +693,23 @@ footer .copy span {
 
 }
 
+footer .mail input{
+  width: 300px;
+  border: none;
+  border-bottom: #e5a01e solid 1px;
+  margin: 8px;
+  color: #515050;
+  background: transparent;
+
+}
+footer .mail input:hover{
+  width: 300px;
+  border: none;
+  border-bottom: #1e6030 solid 2px;
+  margin: 10px;
+  
+}
+
 .ambassadeur {
   display: flex;
   flex-direction: column;
@@ -854,8 +871,72 @@ footer .copy span {
   text-align: center;
 }
 /* formulaire conctact */
-.form{
-  padding: 20px 20px;
+.message{
+  
+  padding: 150px 20px;
+}
+.form {
+  padding: 0 20px;
+
+ 
+}
+.form .ittems{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  
+}
+.form .ittems input{
+  width: 300px;
+  border: none;
+  border-bottom: #e5a01e solid 1px;
+  margin: 8px;
+  color: #515050;
+  transition: 0.3s ease;
+  outline: 0;
+  background: transparent;
+
+}
+.form .ittems input:focus{
+  border-image: linear-gradient(to right,#1e6030,#e5a01e);
+  border-image-slice: 1;
+}
+.form .ittems input:hover{
+  width: 300px;
+  border: none;
+  border-bottom: #1e6030 solid 2px;
+  margin: 10px;
+  
+}
+.form .ittems textarea{
+  width: 300px;
+  background: transparent;
+  height: 50px;
+  border: none;
+  border-bottom: #e5a01e solid 1px;
+  margin: 8px;
+  resize: none;
+  
+}
+.form .ittems textarea:hover{
+  border-bottom: #e5a01e solid 2px;
+  background: transparent;
+}
+.form .btn{
+  padding: 0 30px;
+
+}
+.form .btn input[type=submit]{
+  width: 200px;
+  border: none;
+  background: #e5a01e ;
+  margin: 8px;
+  color: #ffffff;
+
+}
+.our{
+  padding: 20px;
 }
 /* end */
 @media (max-width:720px) {
@@ -867,13 +948,17 @@ footer .copy span {
 
   .site-navbar .titre {
     position: relative;
-    padding: 180px;
+    padding: 100px;
+    text-align: center;
+    width: 200px;
     font-family: 'Kablammo', cursive;
   
   
   }
   .site-navbar .titre h1{
     font-size: 20px;
+    width: 300px;
+    padding-right: 70px;
     
   }
 
