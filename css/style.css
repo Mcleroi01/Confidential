@@ -72,6 +72,19 @@ a:hover {
   opacity: 70%;
 }
 
+.reveal {
+  position: block;
+  transform: translate(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translate(0px);
+  opacity: 1;
+
+}
+
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1999;
@@ -97,7 +110,7 @@ a:hover {
 
 }
 
-.site-navbar #site-logo{
+.site-navbar #site-logo {
   width: 200px;
 
 
@@ -130,16 +143,19 @@ a:hover {
 
 
 }
-span.icon-menu.h3::before{
+
+span.icon-menu.h3::before {
   color: black;
   align-items: center;
-  
-}
-.d-flex.justify-content-between{
-  align-items: center;
-  
 
 }
+
+.d-flex.justify-content-between {
+  align-items: center;
+
+
+}
+
 .site-navbar .site-navigation .site-menu {
   margin-bottom: 0;
 }
@@ -644,15 +660,17 @@ footer {
   padding: 10px;
 
 }
-footer .footer .logo img{
- width: 200px;
+
+footer .footer .logo img {
+  width: 200px;
 
 }
-footer .footer .ittems i{
+
+footer .footer .ittems i {
   font-size: 30px;
   padding: 10px;
- 
- }
+
+}
 
 footer .mail input {
   width: 350px;
@@ -693,7 +711,7 @@ footer .copy span {
 
 }
 
-footer .mail input{
+footer .mail input {
   width: 300px;
   border: none;
   border-bottom: #e5a01e solid 1px;
@@ -702,12 +720,13 @@ footer .mail input{
   background: transparent;
 
 }
-footer .mail input:hover{
+
+footer .mail input:hover {
   width: 300px;
   border: none;
   border-bottom: #1e6030 solid 2px;
   margin: 10px;
-  
+
 }
 
 .ambassadeur {
@@ -798,31 +817,32 @@ footer .mail input:hover{
 
 }
 
-.Not_found{
+.Not_found {
   display: flex;
   justify-content: center;
   padding: 30px;
-  
+
 }
 
-.Not_found .foud_cls{
- flex-direction: column;
- text-align: center;
- position: fixed;
+.Not_found .foud_cls {
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
 }
 
-.Not_found .foud_cls .btn_back .btn{
+.Not_found .foud_cls .btn_back .btn {
   background: #ea9c16;
 
 
- }
- .Not_found .foud_cls .btn_back .btn a{
+}
+
+.Not_found .foud_cls .btn_back .btn a {
   color: white;
 
 
- }
+}
 
- #loader {
+#loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -837,14 +857,135 @@ footer .mail input:hover{
   animation: spin 2s linear infinite;
 }
 
+/* Apropos */
+.Equipe {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.contenaire2 {
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg, #d79d28 ,#e5a01e);
+}
+
+.contenaire2:hover{
+  height: 470px;
+  width: 350px;
+  border-radius: 5px;
+ 
+  
+}
+
+.contenaire2 .wrapper img{
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+.contenaire2:hover .wrapper img.active{
+  height: 470px;
+  width: 350px;
+  border-radius: 5px;
+  margin: 0px auto;
+  border: none;
+}
+
+.contenaire2 .wrapper .title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 25px;
+}
+
+.contenaire2 .wrapper .place {
+  color: #fff;
+  font-size: 17px;
+  line-height: 0px;
+  margin: 10px 0;
+}
+
+.contenaire2 .content {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 1px 20px 10px 20px !important;
+}
+
+.contenaire2 .icons {
+  position: relative;
+  margin-top: -400px;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.contenaire2 .icons li{
+  height: 40px;
+  width: 40px;
+  margin: 5px 0;
+  opacity: 0;
+  margin-left: -100px;
+  transition: all 0.5s ease;
+}
+.contenaire2:hover .icons li:nth-child(2){
+  transition:0.2s ;
+}
+.contenaire2:hover .icons li:nth-child(3){
+  transition:0.4s ;
+}
+.contenaire2:hover .icons li{
+  opacity: 1;
+  margin-left: 7px;
+}
+
+
+.contenaire2 .icons li a {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  color: #e5a01e;
+  display: block;
+  line-height: 40px;
+  transition: all 0.3s;
+}
+
+.contenaire2 .icons li a:hover {
+  transform: scale(0.9);
+}
+
+/* end */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Add animation to "page content" */
@@ -857,37 +998,55 @@ footer .mail input:hover{
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 #myDiv {
   display: none;
   text-align: center;
 }
+
 /* formulaire conctact */
-.message{
-  
+.message {
+
   padding: 150px 20px;
 }
+
 .form {
   padding: 0 20px;
 
- 
+
 }
-.form .ittems{
+
+.form .ittems {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
-  
+
+
 }
-.form .ittems input{
+
+.form .ittems input {
   width: 300px;
   border: none;
   border-bottom: #e5a01e solid 1px;
@@ -898,18 +1057,21 @@ footer .mail input:hover{
   background: transparent;
 
 }
-.form .ittems input:focus{
-  border-image: linear-gradient(to right,#1e6030,#e5a01e);
+
+.form .ittems input:focus {
+  border-image: linear-gradient(to right, #1e6030, #e5a01e);
   border-image-slice: 1;
 }
-.form .ittems input:hover{
+
+.form .ittems input:hover {
   width: 300px;
   border: none;
   border-bottom: #1e6030 solid 2px;
   margin: 10px;
-  
+
 }
-.form .ittems textarea{
+
+.form .ittems textarea {
   width: 300px;
   background: transparent;
   height: 50px;
@@ -917,33 +1079,42 @@ footer .mail input:hover{
   border-bottom: #e5a01e solid 1px;
   margin: 8px;
   resize: none;
-  
+
 }
-.form .ittems textarea:hover{
+
+.form .ittems textarea:hover {
   border-bottom: #e5a01e solid 2px;
   background: transparent;
 }
-.form .btn{
+
+.form .btn {
   padding: 0 30px;
 
 }
-.form .btn input[type=submit]{
+
+.form .btn input[type=submit] {
   width: 200px;
   border: none;
-  background: #e5a01e ;
+  background: #e5a01e;
   margin: 8px;
   color: #ffffff;
 
 }
-.our{
+
+.our {
   padding: 20px;
 }
+
 /* end */
 @media (max-width:720px) {
-  .site-navbar #site-logo{
+
+  .d-flex.justify-content-between{
+    
+  }
+  .site-navbar #site-logo {
     width: 100px;
-  
-  
+
+
   }
 
   .site-navbar .titre {
@@ -952,14 +1123,15 @@ footer .mail input:hover{
     text-align: center;
     width: 200px;
     font-family: 'Kablammo', cursive;
-  
-  
+
+
   }
-  .site-navbar .titre h1{
+
+  .site-navbar .titre h1 {
     font-size: 20px;
     width: 300px;
     padding-right: 70px;
-    
+
   }
 
   #section1 {
@@ -1111,7 +1283,7 @@ footer .mail input:hover{
     padding: 0 20px;
   }
 
-  .ambassadeur .amba_name3{
+  .ambassadeur .amba_name3 {
     position: relative;
     top: 100px;
     left: 20px;
@@ -1140,12 +1312,12 @@ footer .mail input:hover{
 
   .ambassadeur .Amb_img .amba_1 {
     padding: 0 10px;
-   
+
 
   }
-  
 
-  .footer .logo img{
+
+  .footer .logo img {
     width: 100px;
   }
 
@@ -1154,22 +1326,51 @@ footer .mail input:hover{
     width: 300px;
 
   }
+
   /* communaute */
-.Communaute {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+  .Communaute {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 
-}
+  }
 
-.Communaute .contenue{
-  padding: 10px 0;
+  .Communaute .contenue {
+    padding: 10px 0;
 
-}
-/* end*/
+  }
 
-.hero{
-  height: 450px;
-}
+  /* end*/
+
+  .hero {
+    height: 450px;
+  }
+
+  .reveal {
+    position: relative;
+    transform: translate(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal.active {
+    transform: translate(0px);
+    opacity: 1;
+
+  }
+
+  .Apropos{
+    margin: 80px;
+  }
+
+
+  .Equipe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  
 
 }
