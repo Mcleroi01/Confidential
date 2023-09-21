@@ -121,3 +121,27 @@ function reveal() {
 		
 	}
 }
+
+// slide image 
+let slideIndex=1
+
+function plus(n) {
+	showDivs(slideIndex+=n)
+	
+}
+
+function showDivs(n) {
+	let x=document.getElementsByClassName('slide')
+	if(n>x.length){
+		if (n<1){
+			slideIndex=x.length
+		}
+
+		for (let i = 0; i < x.length; i++) {
+			x[i].style.display='none'
+			
+		}
+		x[slideIndex-1].style.display='block'
+	}
+	
+}

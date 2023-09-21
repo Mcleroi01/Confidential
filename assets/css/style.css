@@ -134,6 +134,10 @@ a:hover {
 
 
 }
+.icon-align-right{
+  color: #000000;
+  font-size: 30px;
+}
 
 .site-navbar .titre {
   color: #1a6230;
@@ -816,6 +820,46 @@ footer .mail input:hover {
   border-radius: 20px;
 
 }
+.adage{
+  display: flex;
+  text-align: center;
+  padding: 20px 30px;
+  background: rgb(246, 245, 245);
+}
+
+.adage .adage_text{
+  padding: 20px 90px;
+  
+}
+.adage .adage_text p{
+  font-family: cursive;
+  color: #7e7e7e;
+  
+}
+.wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.wrap #midle{
+  position: relative;
+  bottom: -100px;
+}
+
+.wrap .wrap_img{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  
+}
+
+.wrap .wrap_img .slide img{
+  width: 300px;
+  height: 200px;
+  padding: 0 20px;
+  object-fit: cover;
+}
 
 .Not_found {
   display: flex;
@@ -863,6 +907,7 @@ footer .mail input:hover {
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-between;
+  
 }
 
 .contenaire2 {
@@ -873,6 +918,7 @@ footer .mail input:hover {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   background: linear-gradient(45deg, #d79d28 ,#e5a01e);
+  
 }
 
 .contenaire2:hover{
@@ -894,6 +940,7 @@ footer .mail input:hover {
   border: 5px solid #fff;
   margin: 20px auto;
   transition: all 0.3s ease;
+  
 }
 .contenaire2:hover .wrapper img.active{
   height: 470px;
@@ -1369,6 +1416,18 @@ footer .mail input:hover {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+  }
+
+  .adage{
+    display: flex;
+    text-align: center;
+    padding: 20px 0px;
+    background: rgb(246, 245, 245);
+  }
+  
+  .adage .adage_text{
+    padding: 20px 20px;
+    
   }
 
   
