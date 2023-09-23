@@ -857,6 +857,16 @@ footer .mail input:hover {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+ 
+
+  
+}
+.wrap .wrap_img .slide{
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.3px);
+  cursor: pointer;
+  
   
 }
 
@@ -865,7 +875,27 @@ footer .mail input:hover {
   height: 200px;
   padding: 0 20px;
   object-fit: cover;
+  transition: all 0.3s ease-in;
+  
+  
 }
+
+.icon-chevron-left{
+  cursor: pointer;
+ 
+  
+}
+.icon-chevron-right{
+  cursor: pointer;
+ 
+  
+}
+
+.icon-chevron-left:hover{
+  
+  
+}
+
 
 .Not_found {
   display: flex;

@@ -123,25 +123,28 @@ function reveal() {
 }
 
 // slide image 
-let slideIndex=1
+const wrap=[...document.querySelectorAll('.wrap_img')];
 
-function plus(n) {
-	showDivs(slideIndex+=n)
-	
-}
+const nextbtn=[...document.querySelectorAll('.icon-chevron-left')];
+const backbtn=[...document.querySelectorAll('.icon-chevron-right')];
+const slide=[...document.querySelectorAll('.slide')];
 
-function showDivs(n) {
-	let x=document.getElementsByClassName('slide')
-	if(n>x.length){
-		if (n<1){
-			slideIndex=x.length
-		}
+wrap.forEach((item,i)=>{
+	let contdim=item.getBoundingClientRect();
+	let contwidth=contdim.width;
 
-		for (let i = 0; i < x.length; i++) {
-			x[i].style.display='none'
-			
-		}
-		x[slideIndex-1].style.display='block'
-	}
-	
-}
+
+	nextbtn[i].addEventListener('click',()=>{
+		item.scrollLeft+= contwidth;
+
+	})
+	slide[i].addEventListener('click',()=>{
+		item.scrollLeft+= contwidth;
+
+	})
+
+	backbtn[i].addEventListener('click',()=>{
+		item.scrollLeft-= contwidth;
+
+	})
+})
