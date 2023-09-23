@@ -142,11 +142,12 @@ a:hover {
 .site-navbar .titre {
   color: #1a6230;
   text-align: center;
-  padding: 200px;
+  padding: 150px;
   font-family: 'Kablammo', cursive;
 
 
 }
+
 
 span.icon-menu.h3::before {
   color: black;
@@ -567,6 +568,11 @@ span.icon-menu.h3::before {
   color: #e5a01e;
   width: 350px;
 
+}
+
+#section1 .title p{
+  font-family: cursive;
+  color: #7e7e7e;
 }
 
 #section1 .content p {
@@ -1166,7 +1172,7 @@ footer .mail input:hover {
 
   .site-navbar .titre {
     position: relative;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     width: 200px;
     font-family: 'Kablammo', cursive;
